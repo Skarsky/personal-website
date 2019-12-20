@@ -117,6 +117,49 @@ main {
   }
 }
 
+// My Work/Projects
+.projects {
+  display: grid;
+
+  img {
+    width: 100%;
+    grid-gap: 0.875rem;
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid white;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}
+
+// Styling the buttons (uses inheritance)
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+// @extend is used to inherit another class
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: white;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
