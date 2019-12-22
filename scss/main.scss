@@ -78,6 +78,20 @@ main {
   }
 }
 
+#about-sm-heading {
+  background: none;
+}
+
+#resume {
+  border-bottom: 3px solid $secondary-color;
+  border-top: 3px solid $secondary-color;
+
+  &:hover {
+    color: $secondary-color;
+    @include easeOut();
+  }
+}
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -111,28 +125,83 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    // background: lighten($primary-color, 10);
     padding: 0.5rem;
     border-bottom: 5px solid $secondary-color;
+
+    .job-features {
+      margin: 2rem;
+
+      li,
+      p {
+        margin: 1rem;
+      }
+    }
+
+    .job-img > img {
+      border-radius: 25%;
+      margin: 0.5rem;
+      border: 2px solid white;
+
+      &:hover {
+        border-color: $secondary-color;
+        @include easeOut();
+      }
+    }
   }
 }
 
-// My Work/Projects
+#work-sm-heading {
+  background: none;
+}
+
+// My Work
 .projects {
   display: grid;
-  grid-gap: 0.875rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+
+  .features {
+    border-bottom: 2px solid $secondary-color;
+    height: 375px;
+  }
+
+  li {
+    margin-top: 1rem;
+  }
+
+  // .final-feature {
+  // border-bottom: 2px solid $secondary-color;
+  // padding-bottom: 1rem;
+  // }
+
+  h2 {
+    padding: 1rem 1rem;
+    font-weight: bold;
+    height: 175px;
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
 
   img {
     width: 100%;
+    height: 175px;
     border: 3px solid white;
 
     &:hover {
-      opacity: 0.875;
+      border-radius: 2rem;
+      opacity: 0.75;
       border-color: $secondary-color;
       @include easeOut();
     }
   }
+}
+
+#contact-sm-heading {
+  background: none;
 }
 
 // Contact
