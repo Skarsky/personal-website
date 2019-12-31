@@ -208,10 +208,19 @@ main {
       .about-info .job .job-features li,
       .about-info .job .job-features p {
         margin: 1rem; }
+    .about-info .job h1,
+    .about-info .job h2,
+    .about-info .job h3 {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
     .about-info .job .job-img > img {
       border-radius: 25%;
       margin: 0.5rem;
-      border: 2px solid white; }
+      border: 2px solid white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
       .about-info .job .job-img > img:hover {
         border-color: #ff1c3a;
         transition: all 0.5s ease-out; }
