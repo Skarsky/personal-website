@@ -5,4 +5,4 @@ First personal/portfolio website
 <p>HTML, CSS, JavaScript, Sass (CSS preprocessing)</p>
 
 <li>Design inspired by <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">TraversyMedia</a></li>
-<li>Images from Unsplash</li>
+<li>Certain images from - <a href="https://unsplash.com/">Unsplash</a></li>
