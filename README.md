@@ -2,5 +2,5 @@
 First personal/portfolio website 
 
 <p>
-Edited the domain name from the default gh-pages name
+Changed the domain name from the default gh-pages name
 </p>
